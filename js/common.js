@@ -1,3 +1,8 @@
+/*
+Author: Pei Wang
+Email: givenlovs@msn.com
+Last updated: 2014-06-12
+*/
 $(function(){
 	$("#teams ul:nth-child(2n)").addClass("even");
 
