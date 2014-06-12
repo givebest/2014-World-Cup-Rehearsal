@@ -1,0 +1,485 @@
+@charset "utf-8";
+/* CSS Document */
+.main{
+	margin:0 auto;
+	margin-top:20px;
+	width:1000px;
+	color:#333;
+}
+.main h2.tit{
+	height:67px;
+	background:url(../images/title.png) no-repeat 0 0;
+}
+.main h2.tit a{
+	line-height:67px;
+	font-size:20px;
+	font-weight:bold;
+}
+.main h2.tit a:hover{
+	text-decoration:underline;
+}
+.main h2.tit a,
+.main h2.tit a:visited{
+	color:#fff;
+}
+.main h2.tit a.tLeft{
+	float:left;
+	padding-left:125px;
+}
+.main h2.tit a.tRight{
+	float:right;
+	padding-right:110px;
+}
+.main h3{
+	margin:20px 0 0 0;
+}
+.main .teams{
+	float:left;
+	width:100%;
+	margin-top:15px;
+	position:relative;
+	z-index:999;
+	color:#666;
+}
+.teams .tmLeft{
+	float:left;
+	width:495px;
+}
+.teams .tmRight{
+	float:right;
+	width:495px;
+}
+.teams ul{
+	float:left;
+	width:495px;
+	background-color:#ebebeb;
+	clear:left;
+}
+.teams ul.even{
+	background-color:#f6f6f6;
+}
+.teams ul.fRight{
+	float:right;
+	clear:none;
+}
+.teams div ul.ulLast{
+	padding-bottom:34px;
+}
+.teams li{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	padding:14px 0;
+	height:38px;
+	line-height:38px;
+	font-size:14px;
+	font-weight:bold;
+	width:106px;
+	text-align:left;
+	position:relative;
+	background:url(../images/flagBg.png) no-repeat 0 50%;
+}
+.teams li b{
+	display:none;
+	position:absolute;
+	left:0;
+	top:0;
+	width:100px;
+	height:60px;
+	background:url(../images/transparent.gif);
+	opacity:0.5;
+	z-index:12;
+}
+.teams li.dis{
+	color:#052ac8;
+	background-position:-354px 50%;
+}
+.teams li.dis b{
+	display:block;
+}
+.teams li span{
+	position:relative;
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	top:-2px;
+	+top:-1px;
+	_top:3px;
+	left:3px;
+	cursor:pointer;
+	z-index:10;
+}
+.teams li sup{
+	position:absolute;
+	top:4px;
+	left:40px;
+	display:none;
+	width:17px;
+	height:17px;
+	border-radius:50%;
+	text-align:center;
+	line-height:17px;
+	font-size:12px;
+	color:#fff;
+	overflow:hidden;
+	cursor:pointer;
+	background:url(../images/iconNum.png) no-repeat 0 0;
+	_background:url(../images/iconNum.gif) no-repeat 0 0;
+	z-index:13;
+}
+.teams li.dis sup{
+	display:block;
+}
+.teams li.del sup,
+.teams li:hover sup{
+	text-indent:-1000em;
+	background-position:bottom;
+}
+.teams li.ddel sup,
+.teams li.ddel:hover sup{
+	background-position:0 0;
+	text-indent:0;
+	z-index:10;
+}
+
+.teams li span em{
+	display:none;
+}
+.teams li.dis span{
+	cursor:default;
+}
+.teams li span.poa{
+	position:absolute;
+	width:106px;
+	z-index:1;
+}
+/*--
+.teams li span.dis img{
+	position:relative;
+	z-index:1;
+}
+.teams li span.dis em{
+	display:block;
+	position:absolute;
+	z-index:10;
+	left:-5px;
+	top:-5px;
+	width:116px;
+	height:50px;
+	background:#ccc url(../images/t.png);
+	cursor:default;
+}
+--*/
+.teams li span.fs12{
+	font-size:12px;
+	font-weight:100;
+}
+.teams li span img{
+	padding-right:4px;
+}
+@media \0screen {
+    teams li span{
+		top:0;
+	}
+}
+.teams li.liLast{
+	padding-right:0;
+}
+.teams li.tName{
+	color:#333;
+	font-size:22px;
+	width:48px;
+	text-align:center;
+	background:none;
+}
+
+.main .gradeList{
+	z-index:10;
+	position:relative;
+	float:left;
+	width:100%;
+	height:743px;
+	background:#f6f6f6 url(../images/conBg.png) no-repeat 0 0;
+}
+.gradeList .glLeft,
+.gradeList .glRight{
+	position:absolute;
+	width:500px;
+	top:0;
+	left:0;
+}
+.gradeList .glRight{
+	left:500px;
+}
+.gradeList .tmFlag{
+	position:absolute;
+	width:90px;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+}
+.gradeList .tmFlag span{
+	display:block;
+	position:relative;
+	width:90px;
+	transition:all 1s ease 0s;
+	z-index:20;
+}
+.gradeList .tmFlag span.del em{
+	display:none;
+}
+.gradeList .tmFlag img{
+	display:block;
+	width:40px;
+	margin:0 auto 5px;
+	cursor:pointer;
+}
+.gradeList .tmFlag em{
+	position:absolute;
+	top:-14px;
+	left:63px;
+	display:block;
+	width:17px;
+	height:17px;
+	border-radius:50%;
+	text-indent:-1000em;
+	overflow:hidden;
+	cursor:pointer;
+	background:url(../images/iconClose.png) no-repeat 0 0;
+	_background:url(../images/iconClose.gif) no-repeat 0 0;
+}
+.gradeList .tmFlag em:hover{
+	background-position:0 -17px;
+}
+.glLeft .team16{left:19px;}
+.glLeft .team8{left:149px;}
+.glLeft .team4{left:279px;}
+.glLeft .team2{left:410px;}
+.gradeList .teamA1,
+.gradeList .teamB1{top:81px;}
+.gradeList .teamB2,
+.gradeList .teamA2{top:152px;}
+.gradeList .teamAB,
+.gradeList .teamBA{top:117px;}
+.gradeList .teamC1,
+.gradeList .teamD1{top:245px;}
+.gradeList .teamD2,
+.gradeList .teamC2{top:316px;}
+.gradeList .teamCD,
+.gradeList .teamDC{top:281px;}
+.gradeList .teamAD,
+.gradeList .teamDA{top:199px;}
+.gradeList .teamE1,
+.gradeList .teamF1{top:408px;}
+.gradeList .teamF2,
+.gradeList .teamE2{top:480px;}
+.gradeList .teamEF,
+.gradeList .teamFE{top:445px;}
+.gradeList .teamG1,
+.gradeList .teamH1{top:573px;}
+.gradeList .teamH2,
+.gradeList .teamG2{top:644px;}
+.gradeList .teamGH,
+.gradeList .teamHG{top:609px;}
+.gradeList .teamEH,
+.gradeList .teamHE{top:527px;}
+.gradeList .teamAH,
+.gradeList .teamHA{top:483px;}
+
+
+.glRight .team16{right:19px;}
+.glRight .team8{right:148px;}
+.glRight .team4{right:278px;}
+.glRight .team2{right:405px;}
+
+.gradeList .teamChampion{
+	position:absolute;
+	left:456px;
+	top:364px;
+	font-size:16px;
+	color:#d5ffaf;
+}
+.gradeList .teamChampion img{
+	margin-bottom:24px;
+}
+.gradeList .btnBet{
+	position:absolute;
+	left:414px;
+	top:580px;
+	width:180px;
+	text-align:center;
+	font-size:24px;
+}
+.gradeList .btnBet button{
+	margin-top:10px;
+	width:170px;
+	height:62px;
+	font-size:24px;
+	font-weight:bold;
+	border-radius:8px;
+	background-color:#fff000;
+	color:#418f1e;
+	text-shadow:1px 1px 2px #fff;
+	box-shadow:0 3px 1px #444;
+	 transition: all 1s ease 0s;
+	 border:1px solid #fff000;
+}
+.gradeList .btnBet button:hover{
+	background-color:#418f1e;
+	color:#fff000;
+	text-shadow:1px 1px 2px #666;
+	border:1px solid #7EDC56;
+}
+.no-borderradius .gradeList .btnBet button{
+	border-left:1px solid #999;
+	border-top:1px solid #999;
+	border-right:2px solid #444;
+	border-bottom:2px solid #444;
+}
+.gradeList .btnBet a{
+	text-decoration:underline;
+	color:#6699CC;
+	font-size:16px;
+}
+.gradeList .btnBet button:disabled{
+	border:1px solid #ccc;
+	background-color:#eee;
+	text-shadow:none;
+	box-shadow:none;
+	cursor:default;
+	color:#ccc;
+}
+.gradeList .tips{
+	position:absolute;
+	left:460px;
+	top:64px;
+	width:80px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	border:1px solid #fff;
+	border-radius:5px;
+	background-color:#f1f1f1;
+	cursor:help;
+	box-shadow:1px 2px 1px #ccc;
+	letter-spacing:2px;
+}
+.gradeList .tips .tooltip{
+	top:10px;
+	left:80px;
+	width:200px;
+	text-align:left;
+	letter-spacing:0;
+}
+/*--tooltips--*/
+.teams li .tooltip,
+.teams li.dis .tooltip{
+	color:#666;
+}
+.tooltip{
+	display:none;
+	position:absolute;
+	z-index:999;
+	left:38px;
+	top:43px;
+	background:#eee;
+	border:1px solid #ccc;
+	padding:5px 10px;
+	border-radius:10px;
+	font-size:12px;
+	width:110px;
+	line-height:20px;
+	box-shadow:1px 2px 1px #999;
+}
+.gradeList .tmFlag .tooltip{
+	
+	left:69px;
+	top:19px;
+	color:#666;
+}
+.gradeList .light{
+	position:absolute;
+	left:475px; 
+	top:358px;
+	width:50px;
+	height:41px;
+	border:1px solid #FFFF00;
+	border-radius:9px;
+	-webkit-animation:myLigth 1.5s infinite;
+	animation:myLigth 1.5s infinite;
+}
+.gradeList .light img{
+	display:none;
+}
+@-webkit-keyframes myLigth{
+	0%{box-shadow:1px 1px 5px #FFFF00, -1px 1px 5px #FFFF00, 1px -1px 5px #FFFF00, -1px -1px 5px #FFFF00,  inset 0 0 4px #FFFF00;}
+	100%{box-shadow:3px 3px 18px #FFFF00, -3px 3px 18px #FFFF00, 3px -3px 18px #FFFF00, -3px -3px 18px #FFFF00,  inset 0 0 4px #FFFF00;}
+}
+@keyframes myLigth{
+	0%{box-shadow:1px 1px 5px #FFFF00, -1px 1px 5px #FFFF00, 1px -1px 5px #FFFF00, -1px -1px 5px #FFFF00,  inset 0 0 4px #FFFF00;}
+	50%{box-shadow:3px 3px 18px #FFFF00, -3px 3px 18px #FFFF00, 3px -3px 18px #FFFF00, -3px -3px 18px #FFFF00,  inset 0 0 4px #FFFF00;}
+	100%{box-shadow:3px 3px 8px #FFFF00, -3px 3px 8px #FFFF00, 3px -3px 8px #FFFF00, -3px -3px 8px #FFFF00,  inset 0 0 4px #FFFF00;}
+}
+.no-cssanimations .gradeList .light{
+	border:none;
+}
+.no-cssanimations .gradeList .light img{
+	display:block;
+	position:absolute;
+	top:-30px;
+	left:-23px;
+}
+
+
+
+/*--help--*/
+#cupHelp{
+	position:fixed;
+	right:10px;
+	top:300px;
+	height:47px;
+	width:40px;
+	text-align:center;
+	background-color:#ccc;
+	cursor:help;
+	z-index:1000;
+	background:url(../images/help.png) no-repeat 0 0;
+	_position:absolute;
+	_top:expression(eval(document.documentElement.scrollTop + 300));
+	_right:auto;
+	_left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0) - 10);
+}
+#cupHelp .tooltip{
+	border-radius:0;
+	top:0;
+	right:40px;
+	left:auto;
+	width:440px;
+	text-align:left;
+	letter-spacing:0;
+	background:#fff;
+	text-indent:0;
+	padding:15px;
+	color:#333;
+	box-shadow:0 0 0 #62C724;
+	border:2px solid #62C724;
+	background-color:#F4FCF1;
+}
+#cupHelp .tooltip p{
+	margin:0;
+	padding:5px 0;
+}
+
+
+
+	/*Make position:fixed work in IE6!*/
+		.fixed-top    /* position fixed Top    */{position:fixed;bottom:auto;top:0;}
+		.fixed-bottom /* position fixed Bottom */{position:fixed;bottom:0;top:auto;}
+		.fixed-left   /* position fixed Left   */{position:fixed;right:auto;left:0;}
+		.fixed-right  /* position fixed right  */{position:fixed;right:0;left:auto;}
+
+		* html,* html body   /* IE6 Fixed Position Jitter Fix */{background-image:url(about:blank);background-attachment:fixed;}
+		* html .fixed-top    /* IE6 position fixed Top        */{position:absolute;bottom:auto;top:expression(eval(document.documentElement.scrollTop));}
+		* html .fixed-right  /* IE6 position fixed right      */{position:absolute;right:auto;left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0));}
+		* html .fixed-bottom /* IE6 position fixed Bottom     */{position:absolute;bottom:auto;top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}
+		* html .fixed-left   /* IE6 position fixed Left       */{position:absolute;right:auto;left:expression(eval(document.documentElement.scrollLeft));}
