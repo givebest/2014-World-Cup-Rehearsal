@@ -44,7 +44,9 @@ $(function(){
 	});
 
 	$teams.find("li").each(function(){
-		$("<b></b>").appendTo($(this));
+		var $this = $(this);
+		$("<b></b>").appendTo($this);
+		$this.find("span").append("<i></i>");
 	});
 	
 	$teams.find("li").each(function(){

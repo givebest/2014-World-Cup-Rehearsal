@@ -84,7 +84,8 @@ Last updated: 2014-06-12
 	position:relative;
 	background:url(../images/flagBg.png) no-repeat 0 50%;
 }
-.teams li b{
+.teams li b,
+.teams li i{
 	display:none;
 	position:absolute;
 	left:0;
@@ -94,6 +95,47 @@ Last updated: 2014-06-12
 	background:url(../images/transparent.gif);
 	opacity:0.5;
 	z-index:12;
+}
+.teams li.liJJ i,
+.teams li.liTT i,
+.teams li.liNO1 i,
+.teams li.liNO2 i{
+	display:block;
+	z-index:11;
+	width:46px;
+	height:38px;
+	top:0;
+	_top:-3px;
+	left:-3px;
+	_left:-2px;;
+	opacity:1;
+	background:url(../images/jj.png) no-repeat 0 50%;
+	_background:url(../images/jj.gif) no-repeat 0 50%;
+}
+.teams li.liNO1 i{
+	background:url(../images/NO1.png) no-repeat 0 50%;
+	_background:url(../images/NO1.gif) no-repeat 0 50%;	
+}
+.teams li.liNO2 i{
+	background:url(../images/NO2.png) no-repeat 0 50%;
+	_background:url(../images/NO2.gif) no-repeat 0 50%;	
+}
+.teams li.liTT{
+	color:#aaa;
+}
+.teams li.liTT i{
+	display:block;
+	left:0;
+	top:1px;
+	_top:-4px;
+	background:url(../images/tt.png) no-repeat 0 50%;	
+}
+.teams li.liTT b,
+.teams li.liJJ b{
+	display:block;
+}
+.teams li.liClk b{
+	display:none;
 }
 .teams li.dis{
 	color:#052ac8;
@@ -111,6 +153,7 @@ Last updated: 2014-06-12
 	+top:-1px;
 	_top:3px;
 	left:3px;
+	height:37px;
 	cursor:pointer;
 	z-index:10;
 }
